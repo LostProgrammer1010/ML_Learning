@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd# type: ignore
 
 melbourne_file_path = "/Users/dustinmeyer/Documents/Github/ML_Learning/Machine Learning/Kaggle/Model-Validation/Input/melb_data.csv"
 melbourne_data = pd.read_csv(melbourne_file_path)
@@ -11,9 +11,9 @@ melbourne_features = ['Rooms', 'Bathroom', 'Landsize', 'BuildingArea', 'YearBuil
 
 X = filtered_melbourne_data[melbourne_features]
 
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error
+from sklearn.tree import DecisionTreeRegressor # type: ignore
+from sklearn.model_selection import train_test_split # type: ignore
+from sklearn.metrics import mean_absolute_error # type: ignore
 """
 Training on data and testing with same data it was trained on
 

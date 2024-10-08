@@ -1,5 +1,5 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
+import pandas as pd # type: ignore
+from sklearn.model_selection import train_test_split # type: ignore
 
 melbourne_file_path = "/Users/dustinmeyer/Documents/Github/ML_Learning/Machine Learning/Kaggle/Model-Validation/Input/melb_data.csv"
 melbourne_data = pd.read_csv(melbourne_file_path)
@@ -14,8 +14,8 @@ X = filtered_melbourne_data[melbourne_features]
 
 train_X, val_X, train_y, val_y = train_test_split(X,y, random_state=0)
 
-from sklearn.metrics import mean_absolute_error
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_absolute_error # type: ignore
+from sklearn.tree import DecisionTreeRegressor # type: ignore
 
 def get_mae(max_lead_nodes, train_X, val_X, train_y, val_y):
     model = DecisionTreeRegressor(max_leaf_nodes=max_lead_nodes, random_state=0)
