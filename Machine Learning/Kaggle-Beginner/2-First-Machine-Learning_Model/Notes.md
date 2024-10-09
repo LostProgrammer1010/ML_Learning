@@ -5,6 +5,7 @@
 - This is the value that you want to model to predict hense the name
 
 ## Features
+- This is defined as X
 - Columns that are put into the model to predict the value we are looking for
 - Depends on the model you are building for the best number of features
 
